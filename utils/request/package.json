@@ -1,11 +1,11 @@
 {
-  "name": "@wiki-cli-dev/core",
+  "name": "@wiki-cli-dev/request",
   "version": "1.0.2",
   "description": "> TODO: description",
-  "author": "Chinapenguin <2656193813@qq.com>",
+  "author": "wqli02 <wiki.liu@royole.com>",
   "homepage": "https://github.com/Chinapenguin/wiki-cli-dev#readme",
   "license": "ISC",
-  "main": "lib/core.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -13,9 +13,12 @@
   "files": [
     "lib"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://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@github.com/Chinapenguin/wiki-cli-dev.git"
+    "url": "git+https://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@github.com/Chinapenguin/wiki-cli-dev.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
@@ -23,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/Chinapenguin/wiki-cli-dev/issues"
   },
-  "publishConfig": {
-    "access": "public"
+  "dependencies": {
+    "axios": "^0.21.1"
   }
 }

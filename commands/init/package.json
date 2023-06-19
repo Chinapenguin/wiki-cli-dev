@@ -1,0 +1,40 @@
+{
+  "name": "@wiki-cli-dev/init",
+  "version": "1.0.2",
+  "description": "init",
+  "author": "Chinapenguin <2656193813@qq.com>",
+  "homepage": "https://github.com/Chinapenguin/wiki-cli-dev#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Chinapenguin/wiki-cli-dev.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Chinapenguin/wiki-cli-dev/issues"
+  },
+  "dependencies": {
+    "@wiki-cli-dev/command": "file:../../models/command",
+    "@wiki-cli-dev/log": "file:../../utils/log",
+    "@wiki-cli-dev/request": "file:../../utils/request",
+    "@wiki-cli-dev/utils": "file:../../utils/utils",
+    "@wiki-cli-dev/package": "file:../../models/package",
+    "fs-extra": "^10.1.0",
+    "semver": "^7.3.7",
+    "user-home": "^3.0.0",
+    "inquirer": "^7.3.3"
+  }
+}
