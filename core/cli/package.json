@@ -1,6 +1,6 @@
 {
   "name": "@wiki-cli-dev/core",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "> TODO: description",
   "author": "Chinapenguin <2656193813@qq.com>",
   "homepage": "https://github.com/Chinapenguin/wiki-cli-dev#readme",
@@ -30,10 +30,10 @@
     "access": "public"
   },
   "dependencies": {
-    "@wiki-cli-dev/get-npm-info": "file:../../utils/get-npm-info",
     "@wiki-cli-dev/exec": "file:../exec",
-    "@wiki-cli-dev/log": "file:../../utils/log",
+    "@wiki-cli-dev/get-npm-info": "file:../../utils/get-npm-info",
     "@wiki-cli-dev/init": "file:../../commands/init",
+    "@wiki-cli-dev/log": "file:../../utils/log",
     "colors": "^1.4.0",
     "commander": "^6.2.1",
     "dotenv": "^16.0.1",

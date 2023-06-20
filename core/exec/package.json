@@ -1,6 +1,6 @@
 {
   "name": "@wiki-cli-dev/exec",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "> TODO: description",
   "author": "wqli02 <wiki.liu@royole.com>",
   "homepage": "https://github.com/Chinapenguin/wiki-cli-dev#readme",
@@ -27,8 +27,8 @@
     "url": "https://github.com/Chinapenguin/wiki-cli-dev/issues"
   },
   "dependencies": {
-    "@wiki-cli-dev/package": "file:../../models/package",
     "@wiki-cli-dev/log": "file:../../utils/log",
+    "@wiki-cli-dev/package": "file:../../models/package",
     "@wiki-cli-dev/utils": "file:../../utils/utils"
   }
 }

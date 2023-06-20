@@ -1,6 +1,6 @@
 {
   "name": "@wiki-cli-dev/init",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "init",
   "author": "Chinapenguin <2656193813@qq.com>",
   "homepage": "https://github.com/Chinapenguin/wiki-cli-dev#readme",
@@ -29,12 +29,12 @@
   "dependencies": {
     "@wiki-cli-dev/command": "file:../../models/command",
     "@wiki-cli-dev/log": "file:../../utils/log",
+    "@wiki-cli-dev/package": "file:../../models/package",
     "@wiki-cli-dev/request": "file:../../utils/request",
     "@wiki-cli-dev/utils": "file:../../utils/utils",
-    "@wiki-cli-dev/package": "file:../../models/package",
     "fs-extra": "^10.1.0",
+    "inquirer": "^7.3.3",
     "semver": "^7.3.7",
-    "user-home": "^3.0.0",
-    "inquirer": "^7.3.3"
+    "user-home": "^3.0.0"
   }
 }
