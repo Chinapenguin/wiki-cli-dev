@@ -72,11 +72,11 @@ class InitCommand extends Command {
         nodir: true,
       });
       console.log(files, '--------files');
+      console.log(projectInfo, '-----projectInfo');
       if (files) {
         Promise.all(
           files.map((file) => {
             const filePath = path.join(dir, file);
-            console.log(projectInfo, '-----projectInfo');
             return new Promise((resolveP, rejectP) => {
               ejs.renderFile(filePath, projectInfo, {}, (err, result) => {
                 if (err) {
@@ -118,27 +118,27 @@ class InitCommand extends Command {
       const templateIgnore = this.templateInfo.ignore || [];
       const ignore = ['node_modules/**', ...templateIgnore];
       await this.ejsRender(ignore);
-      // if (installCommand) {
-      //   const installcmd = installCommand.split(' ');
-      //   const cmd = installcmd[0];
-      //   const args = installcmd.slice(1);
-      //   console.log(cmd, args);
-      //   const ret = await execAsync(cmd, args, {
-      //     stdio: 'inherit',
-      //     cwd: process.cwd(),
-      //   });
-      // }
-      // if (startCommand) {
-      //   const startCmd = startCommand.split(' ');
-      //   const cmd = startCmd[0];
-      //   const args = startCmd.slice(1);
-      //   console.log(cmd, args);
-      //   const ret = await execAsync(cmd, args, {
-      //     stdio: 'inherit',
-      //     cwd: process.cwd(),
-      //   });
-      // }
-      // console.log(ret);
+      if (installCommand) {
+        const installcmd = installCommand.split(' ');
+        const cmd = installcmd[0];
+        const args = installcmd.slice(1);
+        console.log(cmd, args);
+        const ret = await execAsync(cmd, args, {
+          stdio: 'inherit',
+          cwd: process.cwd(),
+        });
+      }
+      if (startCommand) {
+        const startCmd = startCommand.split(' ');
+        const cmd = startCmd[0];
+        const args = startCmd.slice(1);
+        console.log(cmd, args);
+        const ret = await execAsync(cmd, args, {
+          stdio: 'inherit',
+          cwd: process.cwd(),
+        });
+      }
+      console.log(ret);
       console.log('模板安装成功');
     }
   }
